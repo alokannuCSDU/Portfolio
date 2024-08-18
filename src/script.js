@@ -1,0 +1,35 @@
+import React, { useEffect } from 'react';
+
+const Contact = () => {
+  useEffect(() => {
+    const sound = document.getElementById('hover-sound');
+    const icons = document.querySelectorAll('#contact i');
+
+    icons.forEach(icon => {
+      icon.addEventListener('mouseover', () => {
+        sound.play();
+      });
+    });
+
+    return () => {
+      icons.forEach(icon => {
+        icon.removeEventListener('mouseover', () => {
+          sound.play();
+        });
+      });
+    };
+  }, []);
+
+  return (
+    <section id="contact">
+      <h2>CONTACT ME</h2>
+      <p><i className="fas fa-envelope"></i> Email: <a href="mailto:alok.mca21.du@gmail.com">alok.mca21.du@gmail.com</a></p>
+      <p><i className="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/alok-pratap-758700217" target="_blank">Alok Pratap</a></p>
+      <p><i className="fab fa-github"></i> GitHub: <a href="https://github.com/alokannuCSDU" target="_blank">alokannuCSDU</a></p>
+      <p><i className="fas fa-phone"></i> Call Me: <a href="tel:+919517424924">+91 9517424924</a></p>
+      <audio id="hover-sound" src="hover-sound.mp3"></audio>
+    </section>
+  );
+};
+
+export default Contact;
