@@ -146,14 +146,14 @@ ul li:hover {
   nav ul li {
     margin: 0.3125em; /* 5px */
   }
-  header {
-    padding: 1.87em; /* 15px */
-    margin-roght: 20rem;
-  }
   h2 {
     font-size: 2rem; /* Adjusted for smaller screens */
   }
-
+  header img.header-img {
+    width: 4.25rem; /* 100px */
+    height: 4.25rem; /* 100px */
+    margin-left: 5rem;
+  }
   section {
     padding: 4vh 4vw; /* Adjusted for smaller screens */
   }
