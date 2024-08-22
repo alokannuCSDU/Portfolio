@@ -77,6 +77,7 @@ header h1 {
 
   .header-img {
     width: 10rem; /* 160px */
+    margin-left: 10rem;
   }
 }
 
