@@ -166,8 +166,9 @@ ul li:hover {
   }
 
   header img.header-img {
-    width: 6.25rem; /* 100px */
-    height: 6.25rem; /* 100px */
+    width: 4.25rem; /* 100px */
+    height: 4.25rem; /* 100px */
+    margin-left: 5rem;
   }
 
   section {
@@ -215,9 +216,7 @@ ul li:hover {
 
 /* Section Specific Styles */
 #about p {
-  margin-top: auto;
-  margin-left: 20vh;
-  margin-right: 20vh;
+  margin: auto;
 }
 
 #naam h1 {
