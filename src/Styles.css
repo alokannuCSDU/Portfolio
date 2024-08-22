@@ -159,6 +159,7 @@ ul li:hover {
 @media (max-width: 768px) {
   header {
     padding: 1.87em; /* 15px */
+    margin: auto;
   }
 
   header h1 {
