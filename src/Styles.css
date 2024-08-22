@@ -148,7 +148,7 @@ ul li:hover {
   }
   header {
     padding: 1.87em; /* 15px */
-    margin: auto;
+    margin-roght: 10rem;
   }
   h2 {
     font-size: 2rem; /* Adjusted for smaller screens */
