@@ -139,6 +139,7 @@ ul li:hover {
   right: 35rem; /* 20px */
   top: 33%;
   transform: translateY(-50%);
+  margin-right: 5rem;
 }
 
 /* Responsive Styles */
