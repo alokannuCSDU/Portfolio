@@ -54,13 +54,12 @@ nav ul li a:hover {
 header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Ensures space between text and image */
   padding: 2rem; /* 32px */
 }
 
 header h1 {
   font-size: 3rem; /* 48px */
-  margin-right: 1.5rem; /* 24px */
 }
 
 .header-img {
@@ -84,14 +83,12 @@ header h1 {
 @media (max-width: 768px) {
   header {
     padding: 1.25rem; /* 20px */
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
   }
 
   header h1 {
     font-size: 2rem; /* Adjusted for smaller screens */
-    margin-right: 0;
-    margin-bottom: 1rem;
   }
 
   .header-img {
@@ -100,8 +97,14 @@ header h1 {
 }
 
 @media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
   header h1 {
     font-size: 1.5rem; /* Adjusted for smaller screens */
+    margin-bottom: 1rem;
   }
 
   .header-img {
